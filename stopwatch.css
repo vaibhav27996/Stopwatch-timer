@@ -1,0 +1,79 @@
+/*to center the box */
+.center-box{
+    margin-left: auto;
+    top: 50%;
+    background: #101932;
+    width: 42vw;
+    margin-right: auto;
+    top: 18%;
+    margin-top: 10rem;
+    height: 17rem;  
+    border-top-left-radius:  50px;
+    border-bottom-right-radius:  50px; 
+}
+
+/*show minute and second*/
+.display-no{
+    font-size: 54px;
+    font-weight: 600;
+    color: white;
+    padding-top: 10px;
+    font-family: monospace;
+}
+
+/* button style */
+.button-style{
+    background-color: #767281;
+    color: white;
+    font-family: monospace;
+    border: 1px solid white;
+}
+
+.button-style:hover{
+    background-color: #416a69;
+    color: white;
+    box-shadow: 0px 0px 17px 6px white;
+    font-family: monospace;
+}
+
+.timer-cotainer-before{
+    border-radius: 42px;
+    width: 28rem;
+    margin-left: 4rem;
+    border: 1px solid white;
+}
+
+/* Apply some box shadow to display number box */
+.timer-container-style {
+    -webkit-animation: blink 2s linear infinite;
+    -moz-animation: blink 2s linear infinite;
+    -ms-animation: blink 2s linear infinite;
+    -o-animation: blink 2s linear infinite;
+    animation: blink 2s linear infinite;
+    border-radius: 42px;
+    width: 28rem;
+    margin-left: 4rem;
+}
+
+@keyframes blink {
+    0% {
+        box-shadow: 0 0 20px #9cb3a6;
+    }
+    50% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 0 0 20px #9cb3a6;
+    }
+}
+@-webkit-keyframes blink {
+    0% {
+        box-shadow: 0 0 20px #9cb3a6;
+    }
+    50% {
+        box-shadow: 0 0 0;
+    }
+    100% {
+        box-shadow: 0 0 20px #9cb3a6;
+    }
+}
