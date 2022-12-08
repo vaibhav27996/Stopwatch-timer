@@ -7,7 +7,7 @@
     margin-right: auto;
     top: 18%;
     margin-top: 10rem;
-    height: 17rem;  
+    height: 20rem;  
     border-top-left-radius:  50px;
     border-bottom-right-radius:  50px; 
 }
@@ -38,7 +38,7 @@
 
 .timer-cotainer-before{
     border-radius: 42px;
-    width: 28rem;
+    width: 76%;
     margin-left: 4rem;
     border: 1px solid white;
 }
@@ -53,6 +53,12 @@
     border-radius: 42px;
     width: 28rem;
     margin-left: 4rem;
+}
+.label{
+    color: white;
+}
+h2{
+    color: white;
 }
 
 @keyframes blink {

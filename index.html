@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StopWatch Timer</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.6.1.js"
-  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="stopwatch.css">
 </head>
 <body>
@@ -20,13 +14,19 @@
             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                 <!-- this to for center the box -->
                 <div class="center-box">
+                    <h2 class="text-center pt-2">Stopwatch</h2>
                     <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 pt-5">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 pt-3">
                             <!-- this is timer container -->
+                            
                             <center id="timer-container" class="timer-cotainer-before">
                                 <span class="display-no" id="min">00</span>
                                 <span class="display-no">:</span>
                                 <span class="display-no" id="second">00</span>
+
+                                <div class="label">
+                                    <span>Minute</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Second</span>
+                                </div>
                             </center>
                         </div>
                     </div>
@@ -65,5 +65,5 @@
         </div>
     </div>
     <script type="text/javascript" src="stopwatch_script.js"></script>
-</body>
-</html>
+
+</body></html>
