@@ -6,6 +6,8 @@ $(document).ready(function(){
    
     $("#start").on('click',function(){
         $('#timer-container').addClass('timer-container-style');
+        $( "#start" ).prop( "disabled",true );
+        
 
         interval=setInterval(function(){
             second++;
@@ -37,11 +39,22 @@ $(document).ready(function(){
 
 
     $("#stop").on('click',function(){
-        clearInterval(interval);
+
+        if(second>00 ||  min >00){
+            clearInterval(interval);
+            $( "#start" ).prop( "disabled", false );
+        }else{
+            alert('Start the stopwatch first');
+            return;
+        }
+        
+        
     });
 
     $("#reset").on('click',function(){
         clearInterval(interval);
+        second=00;
+        min=00;
         $("#min").html("00");
         $("#second").html("00");
         $('#timer-container').removeClass('timer-container-style');
